@@ -56,8 +56,11 @@ class Weapon < Item
 
 
   #text editor 에 타입해야 하는글
-  require 'curb'
-pokemon_data = ['','','']
+require 'curb'
+require 'json'
+pokemon_data = ['https://raw.githubusercontent.com/dana2848/ruby-datapoke/master/firstruby/pokedata111.json',
+  'https://raw.githubusercontent.com/dana2848/ruby-datapoke/master/firstruby/pokedata114.json',
+  'https://raw.githubusercontent.com/dana2848/ruby-datapoke/master/firstruby/pokedata88.json']
 
 all Pokemon = []
 
