@@ -53,3 +53,29 @@ class Weapon < Item
       @atk = atk
     end
   end
+
+
+  #text editor 에 타입해야 하는글
+  require 'curb'
+pokemon_data = ['','','']
+
+all Pokemon = []
+
+class pokemondef initaialize(name, hp)
+  @name = username
+  @hp = hp
+end
+end
+
+# pk = Pokemon.new(xx, xx)
+
+
+pokemon_data.each{|url|
+        request = Curl::Esy.perform(url)
+        data = JSON.parse(request.body_str)
+        pk = Pokemon.new(
+              data['name'],
+              data['stat'][5]['base_stat']
+            )
+            all_pokemon << pk
+          }
